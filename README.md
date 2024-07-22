@@ -1,4 +1,4 @@
-# Message Queue Example
+# POSIX Message Queue Example
 
 This guide provides instructions on how to use and configure message queues.
 
