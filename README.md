@@ -1,6 +1,8 @@
-# README: Message Queue Setup Instructions
+# Message Queue Example
 
-This guide provides instructions on how to configure and optimize message queue settings on your system. It includes steps for making permanent changes, adjusting resource limits for IPC queues, and configuring settings both on the host and within Docker containers.
+This guide provides instructions on how to use and configure message queues.
+
+It includes steps for making permanent changes, adjusting resource limits for IPC queues, and configuring settings both on the host and within Docker containers.
 
 ## 1. Making Permanent Changes to Message Queue Settings
 
