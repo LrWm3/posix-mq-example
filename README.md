@@ -4,7 +4,7 @@ This guide provides instructions on how to use and configure message queues.
 
 It includes steps for making permanent changes, adjusting resource limits for IPC queues, and configuring settings both on the host and within Docker containers.
 
-## 1. Making Permanent Changes to Message Queue Settings
+## Set-up: Changes to Message Queue Settings
 
 To adjust the message queue settings permanently, follow these steps:
 
@@ -25,11 +25,11 @@ To adjust the message queue settings permanently, follow these steps:
    echo 16384 > /proc/sys/fs/mqueue/msgsize_max
    ```
 
-## 2. Raising msgqueue rlimits
+## Raising msgqueue rlimits
 
 To handle larger IPC queues, adjust the resource limits (rlimits) for the user.
 
-### 2.1 Running in Docker
+### Running in Docker
 
 When running a container, you can adjust the message queue limits with the following command:
 
@@ -37,7 +37,7 @@ When running a container, you can adjust the message queue limits with the follo
 docker run --rm -it --ulimit msgqueue=unlimited <image>
 ```
 
-### 2.2 Configuring on the Host
+### Configuring on the Host
 
 For persistent settings on the host, modify the `/etc/security/limits.conf` file. Add the following lines:
 
